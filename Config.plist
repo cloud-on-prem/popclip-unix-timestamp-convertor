@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Extension Name</key>
+    <string>Date Translator</string>
+    <key>Extension Identifier</key>
+    <string>ai.pill.popclip.date-translator</string>
+    <key>Extension Description</key>
+    <string>Date Translator</string>
+    <key>Actions</key>
+    <array>
+      <dict>
+        <key>Image File</key>
+        <string>unix-timestamp.png</string>
+        <key>Script Interpreter</key>
+        <string>/bin/bash</string>
+        <key>Shell Script File</key>
+        <string>convert.sh</string>
+        <key>Title</key>
+        <string>Convert to Timestamp</string>
+        <key>After</key>
+        <string>show-result</string>
+        <key>Regular Expression</key>
+        <string>^\d{10}$</string>
+      </dict>
+    </array>
+  </dict>
+</plist>
