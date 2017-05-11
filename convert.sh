@@ -1,4 +1,5 @@
 #!/bin/bash
 set -e
 
-echo $(date -d @"$1")
+DATE=$(date -r "${POPCLIP_TEXT}")
+echo "${DATE}"
