@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
 
-DIR=test.popclipext
+cd "$(dirname "$0")"
+DIR="../test.popclipext"
 rm -rf "${DIR}"
 mkdir "${DIR}"
-cp $(ls -I "auto" -I "${DIR}") ./"${DIR}"/
+cp ../src/* "${DIR}"/
